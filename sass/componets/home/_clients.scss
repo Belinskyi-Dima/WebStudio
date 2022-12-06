@@ -1,0 +1,29 @@
+.clients {
+	padding: 94px 0;;
+}
+.clients__list {
+	// display: flex;
+	// justify-content: center;
+	@include flexMixin();
+}
+// .clients__item:not(:last-child) {
+// 	// margin-right: 30px;
+// }
+.clients__item {
+
+	border: 1px solid #AFB1B8;
+	border-radius: 4px;
+	width: 170px;
+	height: 92px;
+	@include flexMixin($jc: center, $ai: center);
+}
+.clients__icon {
+	fill:  #AFB1B8;
+}
+.clients__item:hover {
+	border: 1px solid var(--accent-color);
+}
+.clients__item:hover .clients__icon{
+	fill: var(--accent-color);
+	
+}

@@ -1,0 +1,31 @@
+// .body {
+// 	font-family: 'Roboto', sans-serif;
+// 	// font-weight: 400;
+// 	// font-size: 16px;
+// 	// line-height: 1.2;
+// 	// letter-spacing: 0.03em;
+// 	// color: var(--title-text-color);
+// 	position: relative;
+// }
+// .title {
+// 	text-align: center;
+// 	font-weight: 700;
+// 	font-size: 36px;
+// 	line-height: 1.16;
+// 	margin-bottom: 50px;
+// 	color: var(--title-text-color);
+// 	letter-spacing:0.03em;
+// }
+
+@mixin titleMixin($fw:500, $fz:16px, $lh: 1.2) {
+	font-weight: $fw;
+	font-size:  $fz;
+	line-height: $lh;
+}
+
+
+@mixin flexMixin($df:flex, $jc: space-between, $ai: center) {
+	display: $df;
+	justify-content: $jc;
+	align-items: $ai;
+}

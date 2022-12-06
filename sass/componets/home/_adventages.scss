@@ -1,0 +1,27 @@
+.adventages {
+	padding: 94px 0;
+}
+.adventages__list {
+	// display: flex;
+	@include flexMixin();
+	flex-wrap: wrap;
+}
+.adventages__item {
+	width: 270px;
+	
+}
+.adventages__item-wrapper {
+	@include flexMixin($jc: center );
+	background: #F5F4FA;
+	margin-bottom: 30px;
+	padding: 25px 0;
+}
+.adventages__title {
+	@include titleMixin($fw:700, $fz:14px, $lh: 1.14);
+	margin-bottom: 10px;
+}
+.adventages__text {
+	line-height: 1.71;
+	color: var(--primery-text-color);
+	padding-right: 8px;
+}

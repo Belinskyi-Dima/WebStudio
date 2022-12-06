@@ -1,0 +1,80 @@
+@import './mixins';
+:root {
+	--primery-text-color:  #757575;
+	--title-text-color: #212121;
+	--accent-color: #2196F3;
+	--whit-color: #ffffff;
+ }
+
+ body {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 1.2;
+	letter-spacing: 0.03em;
+	color: var(--title-text-color);
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	margin: 0 auto;
+}
+
+ .visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
+.container {
+	max-width: 1200px;
+	width: 100%;
+	padding: 0 15px;
+	margin-left: auto;
+	margin-right: auto;
+// 	@media screen and (min-width: 480px) and (max-width: 767px) {
+// 		width: 480px;
+// 	}
+// 	@media screen and (min-width: 780px) {
+// 		width: 780px;
+// }
+// @media screen and (min-width: 1140px) {
+// 	width:  1140px;
+// }
+	
+}
+.title {
+	@include titleMixin($fw:700, $fz:36px, $lh:1.16);
+	margin-bottom: 50px;
+	text-align: center;
+}
+
+
+// .social__list {
+// 	display: flex;
+// 	justify-content: space-between;
+// 	padding: 16px 32px 30px;
+// }
+// .social__item {
+// 	padding: 12px;
+// 	display: flex;
+// 	justify-content: center;
+// 	align-items: center;
+// 	border-radius: 50%;
+// }
+// .social__item-link {
+// 	display: flex;
+// }
+// .social__item:hover{
+// 	background: var(--accent-color);
+// 	fill: var(--whit-color);
+// }
+// .social__icon {
+// 	fill: #AFB1B8;
+// }
+// .social__item:hover .social__icon {
+// 	fill: var(--whit-color);
+// }

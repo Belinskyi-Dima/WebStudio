@@ -1,0 +1,242 @@
+@import '../../utils/placeholders';
+
+.page-wrapper {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: relative;
+}
+.logo {
+	font-weight: 700;
+	font-size: 26px;
+	line-height: 1.15;
+	color: var(--title-text-color);
+	letter-spacing: 0.03em;
+
+}
+// .link-hover:hover,
+// .link-hover:focus {
+// 	color: var(--accent-color);
+// 	/* fill: var(--accent-color); */
+// }
+
+
+/* ----------- */
+.logo-web {
+	color: var(--accent-color);
+}
+.menu-wrapper {
+	display: flex;
+	justify-content: space-between;
+}
+.menu__list {
+	display: flex;
+}
+.menu__text-style {
+	@extend %menuText;
+}
+.menu__link {
+	color: var(--title-text-color);
+	display: block;
+	padding: 30px 0;
+
+}
+.menu__link:hover,
+.menu__link:focus {
+	color: var(--accent-color);
+}
+.menu__item:not(:last-child) {
+	margin-right: 50px;
+}
+.menu__contscts {
+	display: flex;
+	/* align-items: center; */
+}
+.email,
+.tell {
+	display: inline-flex;
+	// margin-right: 50px;
+	align-items: center;
+	/* padding: 10px; */
+	color: var(--primery-text-color);
+}
+.page-wrapper .email,
+.page-wrapper .tell {
+	margin-right: 50px;
+}
+.icon-email {
+	display: inline-flex;
+	align-items: center;
+	height: 16px;
+	width: 12px;
+	padding-top: 2px;
+	margin-right: 10px;
+	fill:var(--primery-text-color);
+}
+.icon-smartphone {
+	display: block;
+	margin-right: 10px;
+	fill: var(--primery-text-color);
+}
+.email:hover .icon-email {
+	fill:var(--accent-color);
+}
+.tell:hover .icon-smartphone {
+	fill: var(--accent-color);
+}
+.currrent {
+	position: relative;
+	color: var(--accent-color);
+} 
+.currrent::after {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 0%;
+	height: 4px;
+	width: 100%;
+	background: var(--accent-color);
+	border-radius: 4px;
+}
+//==============
+
+.mobile-btn__wrapper {
+	// pointer-events: none;
+	
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 15px;
+}
+.mobile-btn {
+	// z-index: 2;
+	padding: 0;
+	border: none;
+	background: transparent;
+	cursor: pointer;
+
+}
+.mobile-icon {
+	display: block;
+
+}
+// .mobile-btn .mobile-icon-close {
+	// display: none;
+// }
+
+
+.mobile-btn.is-open .mobile-icon-close {
+	display: block;
+}
+.mobile-btn.is-open .mobile-icon-burger {
+	display: none;
+}
+.mobile-btn:hover .mobile-icon,
+.mobile-btn:focus .mobile-icon {
+	fill: var(--accent-color);
+}
+
+
+.mobile-menu {
+	display: none;
+
+	position: fixed;
+	overflow-y: scroll;
+	visibility: visible;
+	
+	background-color: #fff;
+	top: 0;
+	left: 0;
+	right: 0;
+
+	// width: 100%;
+	height: 100%;
+
+	&__box {
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 30px;
+	}
+}
+
+.mobile-menu__list {
+	margin-bottom: 302px;
+}
+.mobile-menu.is-open {
+	display: block;
+	// z-index: 1;
+
+
+
+	// pointer-events: none;
+}
+.fixed {
+	position: fixed;
+	overflow-y: scroll;
+	visibility: visible;
+	
+}
+
+.mobile-menu {
+padding: 48px 40px;
+}
+.mobile-menu__link.menu__text-style {
+	@include titleMixin($fz:40px, $lh: 1.18);
+	color: var(--title-text-color);
+}
+.mobile-menu__link.currrent-mobile {
+	color: var(--accent-color);
+}
+.mobile-menu__item:not(:last-child) {
+	margin-bottom: 32px;
+}
+.mobile-menu__contscts {
+	display: block;
+}
+.mobile__contscts-item {
+	margin-bottom: 32px;
+
+}
+.mobile__contscts-item:last-child{
+	margin-bottom: 64px;
+}
+
+.mobile-menu__tell {
+	@include titleMixin($fz: 34px, $lh: 1.17);
+	color: var(--accent-color);
+
+}
+.mobile-menu__email {
+	@include titleMixin($fz: 24px, $lh: 1.16);
+	color: var(--primery-text-color);
+
+}
+.link-hover:hover,
+.link-hover:focus {
+	color: var(--accent-color);
+	/* fill: var(--accent-color); */
+}
+.mobile-menu__social {
+	display: flex;
+}
+.mobile__social-item:not(:last-child) {
+	margin-right: 20px;
+	position: relative;
+}
+.mobile-menu__link {
+	@include titleMixin($fz: 18px, $lh: 1.22);
+
+	color: var(--accent-color);
+}
+.social-link:after {
+	content: "";
+	position: absolute;
+	width: 1px;
+	height: 18px;
+	right: -10px;
+	background: rgba(33, 33, 33, 0.2);;
+}
+
+// .mobile__social-item:not(:last-child) {
+// 	margin-right: 20px;
+// }
