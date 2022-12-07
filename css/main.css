@@ -101,22 +101,28 @@ body {
   text-align: center;
 }
 
+body.modal-open {
+  overflow: hidden;
+}
+
 .backdrop {
-  top: 0;
   position: fixed;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.6);
   z-index: 5;
+  overflow-y: scroll;
 }
 
 .modal {
-  width: 528px;
-  /* height: 581px; */
+  position: absolute;
+  max-width: 528px;
   background: var(--whit-color);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .backdrop.is-hidden {
@@ -339,10 +345,6 @@ body {
   cursor: pointer;
 }
 
-body.modal-open {
-  overflow: hidden;
-}
-
 .menu__text-style {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
@@ -506,6 +508,7 @@ body.modal-open {
 
 .mobile-menu.is-open {
   display: block;
+  z-index: 1;
 }
 
 .fixed {

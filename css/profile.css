@@ -101,6 +101,10 @@ body {
   text-align: center;
 }
 
+body.modal-open {
+  overflow: hidden;
+}
+
 .menu__text-style {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
@@ -264,6 +268,7 @@ body {
 
 .mobile-menu.is-open {
   display: block;
+  z-index: 1;
 }
 
 .fixed {

@@ -11,8 +11,8 @@ function openModal() {
 	
 }
 
-const btnBurger = document.querySelector(".mobile-btn")
-const btnBurgerCl = document.querySelector(".mobile-btn-cl")
+const btnBurger = document.querySelector(".mobile-btn");
+const btnBurgerCl = document.querySelector(".mobile-btn-cl");
 
 const menu = document.querySelector(".mobile-menu")
 

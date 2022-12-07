@@ -78,3 +78,6 @@
 // .social__item:hover .social__icon {
 // 	fill: var(--whit-color);
 // }
+body.modal-open {
+	overflow: hidden;
+}

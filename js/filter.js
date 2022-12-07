@@ -10,14 +10,17 @@ function openModal() {
 	document.body.classList.toggle("modal-open");
 	
 }
-const btnBurger = document.querySelector(".mobile-btn")
+const btnBurger = document.querySelector(".mobile-btn");
+const btnBurgerCl = document.querySelector(".mobile-btn-cl");
 const munu = document.querySelector(".mobile-menu")
 
 btnBurger.addEventListener("click", openMenu)
+btnBurgerCl.addEventListener("click", openMenu)
 
 function openMenu (e) {
 	munu.classList.toggle("is-open")
 	btnBurger.classList.toggle("is-open")
+	document.body.classList.toggle("modal-open");
 }
 
 
