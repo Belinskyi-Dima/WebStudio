@@ -133,9 +133,16 @@
 		margin-bottom: 10px;
 	}
 }
+@media screen and (min-height: 650px) {
+
+.modal {
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+}
 @media screen and (min-width: 769px) {
 	
-	
+
 	.mobile-wrapper {
 		display: none;
 	}
