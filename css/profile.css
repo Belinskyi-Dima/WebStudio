@@ -724,6 +724,21 @@ body.modal-open {
   }
 }
 @media screen and (min-width: 769px) {
+  .modal__form-title {
+    margin-bottom: 30px;
+  }
+  .modal__form-wrapper {
+    padding: 0 40px 40px;
+  }
+  .modal__label {
+    margin-bottom: 28px;
+  }
+  .modal__textarea {
+    margin-bottom: 20px;
+  }
+  .modal .chackbox__label {
+    margin-bottom: 30px;
+  }
   .mobile-wrapper {
     display: none;
   }

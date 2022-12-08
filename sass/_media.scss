@@ -138,11 +138,28 @@
 .modal {
 	top: 50%;
 	transform: translate(-50%, -50%);
+
 }
 }
 @media screen and (min-width: 769px) {
 	
-
+.modal {
+	&__form-title {
+		margin-bottom: 30px;
+	}
+	&__form-wrapper {
+		padding:  0 40px 40px;
+	}
+	&__label {
+		margin-bottom: 28px;
+	}
+	&__textarea {
+		margin-bottom: 20px;
+	}
+	.chackbox__label {
+		margin-bottom: 30px;
+	}
+}
 	.mobile-wrapper {
 		display: none;
 	}

@@ -130,7 +130,7 @@ body.modal-open {
 }
 
 .modal__btn-wrapper {
-  padding: 8px;
+  padding: 8px 8px 0px;
   display: flex;
   justify-content: end;
 }
@@ -154,7 +154,7 @@ body.modal-open {
 }
 
 .modal__form-wrapper {
-  padding: 0 41px 40px;
+  padding: 0 20px 20px;
 }
 
 .modal__form-title {
@@ -164,13 +164,13 @@ body.modal-open {
   line-height: 1.15;
   letter-spacing: 0.03em;
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
 }
 
 .form__label {
   position: relative;
   display: block;
-  margin-bottom: 28px;
+  margin-bottom: 20px;
 }
 
 .form__input {
@@ -247,7 +247,7 @@ body.modal-open {
   border-radius: 4px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   padding: 12px 16px;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 .form__textarea:not(:-moz-placeholder-shown) {
@@ -285,7 +285,7 @@ body.modal-open {
 .chackbox__label {
   display: block;
   position: relative;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   letter-spacing: 0.03em;
   color: var(--primery-text-color);
 }
@@ -1007,6 +1007,21 @@ body.modal-open {
   }
 }
 @media screen and (min-width: 769px) {
+  .modal__form-title {
+    margin-bottom: 30px;
+  }
+  .modal__form-wrapper {
+    padding: 0 40px 40px;
+  }
+  .modal__label {
+    margin-bottom: 28px;
+  }
+  .modal__textarea {
+    margin-bottom: 20px;
+  }
+  .modal .chackbox__label {
+    margin-bottom: 30px;
+  }
   .mobile-wrapper {
     display: none;
   }
